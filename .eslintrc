@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+    // "prettier/@typescript-eslint"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "legacyDecorators": true,
+      "jsx": true,
+      "tsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["import", "react-hooks", "react", "@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/ban-types": "off"
+  }
+  // "settings": {
+  //   "import/resolver": {
+  //     "node": {
+  //       "paths": ["src"],
+  //       "extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"]
+  //     }
+  //   },
+  //   "react": {
+  //     "version": "detect"
+  //   }
+  // }
+}
