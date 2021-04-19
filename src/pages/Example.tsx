@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import Counter from 'components/example/Counter';
 
-import { exampleActions, exampleSelector } from 'commons/redux/modules/example';
+import { exampleActions, exampleSelector } from 'commons/store/modules/example';
 
 const { requestIncrement } = exampleActions;
 
@@ -17,7 +17,9 @@ const CounterContainer = () => {
     dispatch(requestIncrement());
   };
 
-  const onDecrease = () => {};
+  const onDecrease = () => {
+    console.log('decrease');
+  };
 
   const onIncreaseBy = (diff: number) => {
     console.log(diff);

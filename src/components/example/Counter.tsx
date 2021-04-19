@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { exampleActions } from 'commons/redux/modules/example';
-
 type CounterProps = {
   count: number;
   isProcessing: boolean;

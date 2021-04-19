@@ -1,6 +1,6 @@
 import { createSelector } from '@reduxjs/toolkit';
 
-import { RootState } from 'commons/redux';
+import { RootState } from 'commons/store';
 
 import slice from './slice';
 import { ExampleState } from './types';

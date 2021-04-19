@@ -1,6 +1,6 @@
 import { all, put, delay, takeLatest, fork } from 'redux-saga/effects';
 
-import { exampleActions } from 'commons/redux/modules/example';
+import { exampleActions } from 'commons/store/modules/example';
 
 const { requestIncrement, successIncrement } = exampleActions;
 

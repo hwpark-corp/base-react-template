@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import rootStore from 'commons/redux';
+import rootStore from 'commons/store';
 
 // Components
 import AppLayout from 'components/templates/AppLayout';
